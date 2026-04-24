@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>漫香小舖 만향소포 — 자연에서 온 향, 한국적 내추럴 코스메틱</title>
+  <meta name="description" content="100% 천연 원료로 만든 한국의 향. 에센셜오일, 스킨케어, 라이프케어, 출시예정을 만나보세요." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Serif+KR:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500&family=Cinzel:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       🔄  LOADER — 漫香小舖 한자 로더
+  ═══════════════════════════════════════════ -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__logo-ring">
+        <img src="images/logo1.png" alt="漫香小舖 로고" class="loader__logo-img" />
+      </div>
+      <div class="loader__bar">
+        <div class="loader__bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       📌  HEADER — 헤더 네비게이션
+  ═══════════════════════════════════════════ -->
+  <header id="header" class="header">
+      <div class="header__container">
+
+          <!-- 로고 -->
+          <a href="#hero" class="header__logo" aria-label="만향소포 홈">
+              <img src="images/logo1.png" alt="漫香小舖 로고" class="header__logo-img" />
+
+              <div class="header__logo-text">
+                  <span class="header__brand-hanja">漫香小舖</span>
+                  <span class="header__brand-kr">만향소포</span>
+              </div>
+          </a>
+
+          <!-- 메인 내비게이션 -->
+          <nav class="header__nav" aria-label="주 메뉴">
+              <ul class="header__nav-list">
+                  <li><a href="#hero" class="header__nav-link">메인</a></li>
+                  <li><a href="#products" class="header__nav-link">카탈로그</a></li>
+                  <li><a href="#story" class="header__nav-link">브랜드스토리</a></li>
+              </ul>
+          </nav>
+
+          <!-- 아이콘
+    <div class="header__icons">
+      <button class="header__icon-btn" aria-label="검색">
+        <i class="fas fa-search"></i>
+      </button>
+      <button class="header__icon-btn" aria-label="계정">
+        <i class="far fa-user"></i>
+      </button>
+      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="header__icon-btn" aria-label="스토어 방문">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="header__cart-badge">0</span>
+      </a>
+    </div>-->
+
+          <!-- 모바일 햄버거 -->
+          <button class="header__hamburger" id="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+              <span></span><span></span><span></span>
+          </button>
+      </div>
+
+    <!-- 모바일 드롭다운 -->
+    <nav class="header__mobile-nav" id="mobileNav" aria-label="모바일 메뉴">
+      <ul>
+        <li><a href="#hero" class="mobile-nav-link">메인</a></li>
+        <li><a href="#products" class="mobile-nav-link">카탈로그</a></li>
+        <li><a href="#story" class="mobile-nav-link">브랜드스토리</a></li>
+        <li><a href="#footer" class="mobile-nav-link">문의하기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       🏔️  HERO — 히어로 섹션
+  ═══════════════════════════════════════════ -->
+  <section id="hero" class="hero" aria-label="히어로 배너">
+    <div class="hero__bg">
+      <img src="images/hero-new.jpg" alt="만향소포 제품 컬렉션" class="hero__bg-img" />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <!-- 왼쪽 고정 뱃지들 -->
+      <div class="hero__badges" aria-hidden="true">
+        <div class="hero__badge">
+          <span class="hero__badge-en">K-BEAUTY</span>
+          <span class="hero__badge-kr">한국</span>
+        </div>
+        <div class="hero__badge">
+          <span class="hero__badge-en">NATURE</span>
+          <span class="hero__badge-kr">자연</span>
+        </div>
+        <div class="hero__badge">
+          <span class="hero__badge-en">ORGANIC</span>
+          <span class="hero__badge-kr">유기농</span>
+        </div>
+      </div>
+
+      <!-- 중앙 타이포 -->
+      <div class="hero__title-block">
+        <span class="hero__eyebrow">漫香小舖 · 만향소포</span>
+        <h1 class="hero__title">
+          자연의 숨결,<br />
+          만향의 이야기
+        </h1>
+        <p class="hero__subtitle-en">Breath of Nature, Story of a Thousand Scents</p>
+        <p class="hero__desc">100% 천연 원료 · 100% 메이드 인 코리아</p>
+        <div class="hero__cta-group">
+          <a href="#products" class="btn btn--primary">컬렉션 보기</a>
+          <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="btn btn--outline">스토어 방문</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- 스크롤 인디케이터 -->
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       🗂️  INGREDIENTS — 자연에서 온 원료
+  ═══════════════════════════════════════════ -->
+  <section id="ingredients" class="ingredients section" aria-labelledby="ingredients-title">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__tag">INGREDIENT SPOTLIGHT</span>
+        <h2 id="ingredients-title" class="section__title">
+          천연 원료의 순수함,<br />자연에서 얻은 치유의 힘
+        </h2>
+        <p class="section__subtitle-en">Purity of Natural Ingredients, Healing Power from Nature</p>
+      </header>
+
+      <!-- 원료 그리드 -->
+      <div class="ingredients__grid">
+        <article class="ingredient-card ingredient-card--large">
+          <div class="ingredient-card__img-wrap">
+            <img src="images/ingredients-bg.jpg" alt="한국 천연 식물 원료" loading="lazy" />
+          </div>
+          <div class="ingredient-card__body">
+            <span class="ingredient-card__icon">🌿</span>
+            <h3>유기농 천연 원료</h3>
+            <p>엄격한 기준을 거친 유기농 식물 원료만을 담아, 자연 본연의 가치를 전합니다.</p>
+          </div>
+        </article>
+
+        <article class="ingredient-card">
+            <div class="ingredient-card__symbol">純</div>
+          <h3>희석하지 않은 100% 원액</h3>
+          <p>다른 것을 더하지 않은 100% 원액 그대로의 농도입니다.</p>
+        </article>
+
+        <article class="ingredient-card">
+            <div class="ingredient-card__symbol">韓</div>
+          <h3>K-Beauty</h3>
+          <p>한국에서 직접 관리되는 공정으로 안정적인 품질을 유지합니다.</p>
+        </article>
+
+        <article class="ingredient-card">
+            <div class="ingredient-card__symbol">和</div>
+          <h3>저자극·민감성 피부</h3>
+          <p>섬세한 피부 컨디션을 고려해 순한 사용감을 완성했습니다.</p>
+        </article>
+
+        <article class="ingredient-card">
+            <div class="ingredient-card__symbol">植</div>
+          <h3>Vegan</h3>
+          <p>자연에서 온 원료로만 구성한 순수한 포뮬러, 비건 제품입니다.</p>
+        </article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       🎋  PHILOSOPHY — 만향소포 철학
+  ═══════════════════════════════════════════ -->
+  <section id="philosophy" class="philosophy section" aria-labelledby="philosophy-title">
+    <div class="philosophy__split">
+
+      <!-- 왼쪽 이미지 -->
+      <div class="philosophy__image-side">
+        <div class="philosophy__img-wrap">
+          <img src="images/products-collection.jpg" loading="lazy" />
+        </div>
+        <div class="philosophy__img-badge" aria-hidden="true">
+          <span>Organic</span>
+          <span>K-beauty</span>
+        </div>
+      </div>
+
+      <!-- 오른쪽 텍스트 -->
+      <div class="philosophy__text-side">
+        <span class="section__tag">OUR PHILOSOPHY</span>
+        <h2 id="philosophy-title" class="philosophy__title">
+          자연의 정성으로<br />빚어낸 향기
+        </h2>
+        <p class="philosophy__subtitle-en">Scent Crafted with Care</p>
+        <p class="philosophy__desc">
+            만향소포는 수백 년 이어온 한국 전통 향 문화를 현대의 감성으로 재해석합니다.
+            <br />기계적인 방식이 아닌, 사람의 손길과 시간을 더해
+            한 병 한 병 정성스럽게 완성합니다.
+        </p>
+        <p class="philosophy__desc">
+          K-뷰티의 오가닉 정신과 한국적 자연의 향이 만나는 곳,
+          그곳이 바로 만향소포입니다.
+        </p>
+        <ul class="philosophy__values" aria-label="브랜드 핵심 가치">
+          <li class="philosophy__value">
+            <span class="philosophy__value-icon">🌿</span>
+            <div>
+              <strong>천연 · 오가닉</strong>
+              <span>합성 향료 없는 순수한 자연의 향</span>
+            </div>
+          </li>
+          <li class="philosophy__value">
+            <span class="philosophy__value-icon">🇰🇷</span>
+            <div>
+              <strong>메이드 인 코리아</strong>
+              <span>한국 원료, 한국 제조, 한국의 자부심</span>
+            </div>
+          </li>
+          <li class="philosophy__value">
+            <span class="philosophy__value-icon">✋</span>
+            <div>
+                <strong>정성 공정</strong>
+                <span>소량 생산으로 한 병 한 병 품질에 집중</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       🛍️  PRODUCTS — 제품 섹션
+  ═══════════════════════════════════════════ -->
+  <section id="products" class="products section" aria-labelledby="products-title">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__tag">PRODUCT CATALOGUE</span>
+        <h2 id="products-title" class="section__title">제품 카탈로그</h2>
+        <p class="section__desc">만향소포의 모든 천연 제품을 만나보세요</p>
+      </header>
+
+      <!-- 탭 필터 -->
+      <div class="products__tabs" role="tablist" aria-label="제품 카테고리 필터">
+        <button class="products__tab active" role="tab" data-filter="all" aria-selected="true">ALL</button>
+        <button class="products__tab" role="tab" data-filter="essential" aria-selected="false">에센셜오일</button>
+        <button class="products__tab" role="tab" data-filter="mist" aria-selected="false">스킨케어</button>
+        <button class="products__tab" role="tab" data-filter="diffuser" aria-selected="false">라이프케어</button>
+        <button class="products__tab" role="tab" data-filter="skincare" aria-selected="false">출시예정</button>
+      </div>
+
+      <!-- 제품 그리드 -->
+      <div class="products__grid" id="productsGrid" role="tabpanel">
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 라벤더.png" alt="라벤더 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+                  <span class="product-card__badge">BEST</span>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 라벤더 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Lavender Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 유칼립투스.png" alt="유칼립투스 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+                  <span class="product-card__badge">BEST</span>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 유칼립투스 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Eucalyptus Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 티트리.png" alt="티트리 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+                  <span class="product-card__badge">BEST</span>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 티트리 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Teatree Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 시트로넬라.png" alt="시트로넬라 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 시트로넬라 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Citronella Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 오렌지.png" alt="오렌지 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 오렌지 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Orange Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 레몬그라스.png" alt="레몬그라스 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 레몬그라스 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Lemongrass Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 파인.png" alt="파인 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 파인 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Pine Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 일랑일랑.png" alt="일랑일랑 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 일랑일랑 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural YlangYlang Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 로즈마리.png" alt="로즈마리 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 로즈마리 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Rosemary Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 자몽.png" alt="자몽 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 자몽 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Grapefruit Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 베르가못.png" alt="베르가못 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 베르가못 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Bergamot Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 시더우드.png" alt="시더우드 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 시더우드 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Cedarwood Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 페퍼민트.png" alt="페퍼민트 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 페퍼민트 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Peppermint Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="essential">
+              <div class="product-card__img-wrap">
+                  <img src="images/에센셜오일병 프랑킨센스.png" alt="프랑킨센스 에센셜오일" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">에센셜오일</span>
+                  <h3 class="product-card__name">천연 프랑킨센스 에센셜오일 10ml</h3>
+                  <p class="product-card__desc">Natural Frankinsense Essential Oil 10ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩16,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="mist">
+              <div class="product-card__img-wrap">
+                  <img src="images/product-mist1.jpg" alt="로즈 토너 미안수 500ml" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo/products/12405011328" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+                  <span class="product-card__badge">BEST</span>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">스킨케어</span>
+                  <h3 class="product-card__name">로즈 토너 미안수 500ml</h3>
+                  <p class="product-card__desc">Rose Toner 美顔水 500ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩28,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="mist">
+              <div class="product-card__img-wrap">
+                  <img src="images/product-mist.jpg" alt="티트리 토너 청안수 500ml" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo/products/12176998445" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+                  <span class="product-card__badge product-card__badge--new">NEW</span>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">스킨케어</span>
+                  <h3 class="product-card__name">티트리 토너 청안수 500ml</h3>
+                  <p class="product-card__desc">Tea Tree Toner 淸顔水 500ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩28,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="mist">
+              <div class="product-card__img-wrap">
+                  <img src="images/product-mist2.jpg" alt="호호바 오일 미안유 60ml" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">스킨케어</span>
+                  <h3 class="product-card__name">100% 호호바 오일 미안유 60ml</h3>
+                  <p class="product-card__desc">100% Jojoba oil 美顔油 60ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩23,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="mist">
+              <div class="product-card__img-wrap">
+                  <img src="images/product-mist3.jpg" alt="로즈 미스트 미안수 60ml" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">스킨케어</span>
+                  <h3 class="product-card__name">로즈 미스트 미안수 60ml</h3>
+                  <p class="product-card__desc">Rose mist 美顔水 60ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩24,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="diffuser">
+              <div class="product-card__img-wrap">
+                  <img src="images/product-mist4.jpg" alt="날벌레 퇴치제 청충수 60ml" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">라이프케어</span>
+                  <h3 class="product-card__name">날벌레 퇴치제 청충수 60ml</h3>
+                  <p class="product-card__desc">Insect repellent 淸蟲水 60ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩8,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="diffuser">
+              <div class="product-card__img-wrap">
+                  <img src="images/product-mist5.jpg" alt="실내 탈취제 만향수 300ml" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">라이프케어</span>
+                  <h3 class="product-card__name">날벌레 퇴치제 청충수 300ml</h3>
+                  <p class="product-card__desc">Air freshener 漫香水 300ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩19,800</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="product-card" data-category="diffuser">
+              <div class="product-card__img-wrap">
+                  <img src="images/product-mist6.jpg" alt="약산성 여성청결제 정화연 200ml" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">라이프케어</span>
+                  <h3 class="product-card__name">약산성 여성청결제 정화연 200ml</h3>
+                  <p class="product-card__desc">LowpH feminine cleanser 淨花涓 200ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">1+1 ₩32,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+
+
+          <article class="product-card" data-category="diffuser">
+              <div class="product-card__img-wrap">
+                  <img src="images/product-mist7.jpg" alt="여성청결제 이너 미스트 청현수 100ml" loading="lazy" />
+                  <div class="product-card__overlay">
+                      <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+                  </div>
+              </div>
+              <div class="product-card__body">
+                  <span class="product-card__category">라이프케어</span>
+                  <h3 class="product-card__name">여성청결제 이너 미스트 청현수 100ml</h3>
+                  <p class="product-card__desc">Feminine Care Mist 淸泫水 100ml</p>
+                  <div class="product-card__footer">
+                      <span class="product-card__price">₩19,000</span>
+                      <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                          <i class="far fa-heart"></i>
+                      </button>
+                  </div>
+              </div>
+          </article>
+          <!--
+    <article class="product-card" data-category="skincare">
+        <div class="product-card__img-wrap">
+            <img src="images/product-oil.jpg" alt="쑥 블렌딩 바디오일" loading="lazy" />
+            <div class="product-card__overlay">
+                <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+            </div>
+        </div>
+        <div class="product-card__body">
+            <span class="product-card__category">스킨케어</span>
+            <h3 class="product-card__name">쑥 허벌 블렌딩 바디오일</h3>
+            <p class="product-card__desc">Mugwort Herbal Blending Body Oil 50ml</p>
+            <div class="product-card__footer">
+                <span class="product-card__price">₩28,000</span>
+                <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </article>
+
+    <article class="product-card" data-category="skincare">
+        <div class="product-card__img-wrap">
+            <img src="images/product-oil.jpg" alt="한방 페이스오일" loading="lazy" />
+            <div class="product-card__overlay">
+                <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+            </div>
+            <span class="product-card__badge product-card__badge--new">NEW</span>
+        </div>
+        <div class="product-card__body">
+            <span class="product-card__category">스킨케어</span>
+            <h3 class="product-card__name">한방 세럼 페이스오일</h3>
+            <p class="product-card__desc">Korean Herbal Serum Face Oil 30ml</p>
+            <div class="product-card__footer">
+                <span class="product-card__price">₩38,000</span>
+                <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </article>
+
+    <article class="product-card" data-category="skincare">
+        <div class="product-card__img-wrap">
+            <img src="images/product-oil.jpg" alt="쑥 릴렉싱 바디워시" loading="lazy" />
+            <div class="product-card__overlay">
+                <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="product-card__quick">구매하기 →</a>
+            </div>
+        </div>
+        <div class="product-card__body">
+            <span class="product-card__category">스킨케어</span>
+            <h3 class="product-card__name">쑥 릴렉싱 바디워시</h3>
+            <p class="product-card__desc">Mugwort Relaxing Body Wash 300ml</p>
+            <div class="product-card__footer">
+                <span class="product-card__price">₩24,000</span>
+                <button class="product-card__wishlist" aria-label="위시리스트 추가">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </article>-->
+
+      </div>
+
+      <div class="products__store-link">
+        <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="btn btn--outline btn--lg">
+          <i class="fas fa-store"></i> 네이버 스마트스토어 방문
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       🏠  BRAND STORY — 브랜드스토리
+  ═══════════════════════════════════════════ -->
+  <section id="story" class="story section" aria-labelledby="story-title">
+    <div class="story__bg">
+      <img src="images/studio-bg.jpg" alt="만향소포 작업실" loading="lazy" class="story__bg-img" />
+      <div class="story__overlay"></div>
+    </div>
+
+    <div class="story__content container">
+      <div class="story__text-block">
+        <span class="section__tag section__tag--light">OUR STORY</span>
+        <h2 id="story-title" class="story__title">
+          우리의 공간,<br />우리의 철학
+        </h2>
+        <p class="story__subtitle-en">Our Space, Our Philosophy</p>
+        <p class="story__desc">
+          만향소포는 한국의 자연에서 영감을 받아, 잊혀가는 향 문화를 현대의 일상으로 되살리고자 합니다.
+          흙의 냄새, 나무의 향, 꽃의 숨결 — 자연이 우리에게 건네는 조용한 이야기를 한 병에 담았습니다.
+        </p>
+
+        <!-- 통계 수치 -->
+        <div class="story__stats" aria-label="브랜드 수치">
+          <div class="story__stat">
+            <span class="story__stat-number" data-target="100">0</span>
+            <span class="story__stat-unit">%</span>
+            <span class="story__stat-label">천연 원료</span>
+          </div>
+          <div class="story__stat">
+            <span class="story__stat-number" data-target="30">0</span>
+            <span class="story__stat-unit">+</span>
+            <span class="story__stat-label">제품 라인</span>
+          </div>
+          <div class="story__stat">
+            <span class="story__stat-number" data-target="100">0</span>
+            <span class="story__stat-unit">%</span>
+            <span class="story__stat-label">저자극 테스트</span>
+          </div>
+          <div class="story__stat">
+            <span class="story__stat-number" data-target="5000">0</span>
+            <span class="story__stat-unit">+</span>
+            <span class="story__stat-label">재구매 고객</span>
+          </div>
+        </div>
+
+        <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="btn btn--primary">스토어 방문하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       📰  NEWSLETTER — 뉴스레터 섹션
+  ═══════════════════════════════════════════ -->
+  <section class="newsletter section--sm" aria-labelledby="newsletter-title">
+    <div class="container newsletter__container">
+      <div class="newsletter__text">
+        <h2 id="newsletter-title" class="newsletter__title">만향소포 소식 받기</h2>
+        <p>신제품, 시즌 향, 한정판 소식을 가장 먼저 전해드립니다.</p>
+      </div>
+      <form class="newsletter__form" novalidate aria-label="뉴스레터 구독 폼">
+        <input type="email" class="newsletter__input" placeholder="이메일 주소를 입력해주세요" aria-label="이메일 입력" />
+        <button type="submit" class="btn btn--primary newsletter__btn">구독하기</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       🦶  FOOTER — 올리브 그린 푸터
+  ═══════════════════════════════════════════ -->
+  <footer id="footer" class="footer" aria-label="사이트 푸터">
+      <div class="footer__top container">
+
+          <!-- 브랜드 컬럼 -->
+          <div class="footer__brand">
+              <img src="images/logo1.png" alt="漫香小舖 만향소포 로고" class="footer__logo" />
+              <p class="footer__tagline">자연에서 온 향,<br />한국적 내추럴 코스메틱</p>
+              <div class="footer__social" aria-label="SNS">
+                  <a href="#" aria-label="Instagram" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                  <a href="#" aria-label="Facebook" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" aria-label="YouTube" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                  <a href="#" aria-label="Pinterest" class="footer__social-link"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+          </div>
+
+          <!-- 고객 서비스 -->
+          <nav class="footer__col" aria-label="고객 서비스">
+              <h3 class="footer__col-title">고객 서비스</h3>
+              <ul class="footer__links">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">배송 안내</a></li>
+                  <li><a href="#">교환 &amp; 반품</a></li>
+                  <li><a href="#">1:1 문의</a></li>
+              </ul>
+          </nav>
+
+          <!-- 회사 정보 -->
+          <nav class="footer__col" aria-label="회사 정보">
+              <h3 class="footer__col-title">회사 정보</h3>
+              <ul class="footer__links">
+                  <li><a href="#story">브랜드 스토리</a></li>
+                  <li><a href="#">언론 보도</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">이용약관</a></li>
+              </ul>
+          </nav>
+
+          <!-- 연락처
+          <div class="footer__col footer__contact">
+              <h3 class="footer__col-title">연락처</h3>
+              <address class="footer__address">
+                  <p><i class="fas fa-map-marker-alt"></i> 서울특별시 성동구 아차산로 123</p>
+                  <p><i class="fas fa-phone"></i> 123-45-6789</p>
+                  <p><i class="fas fa-envelope"></i> info@manhyangsopo.com</p>
+              </address>
+              <a href="https://smartstore.naver.com/manhyangsopo" target="_blank" class="footer__store-btn">
+                  <i class="fas fa-store"></i> 네이버 스마트스토어
+              </a>
+          </div>
+      </div>->
+
+      <!-- 푸터 하단 -->
+      <div class="footer__bottom">
+          <div class="container footer__bottom-inner">
+              <p class="footer__copy">© 2024 Manhyangsopo. All rights reserved.</p>
+              <!-- 워터마크 -->
+              <div class="footer__watermark" aria-hidden="true">漫香小舖</div>
+          </div>
+      </div>
+  </footer>
+
+  <!-- 스크롤 탑 버튼 -->
+  <button id="scrollTop" class="scroll-top" aria-label="맨 위로 이동" aria-hidden="true">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
